@@ -130,15 +130,15 @@ public class Menus {
     
     private static  void TampilkandataIDKaryawansorted() {
 		// TODO Auto-generated method stub	
-        String temp1, temp2;
+        String tmp1, tmp2;
         for (int i = 0; i<dataIDKaryawan.size(); i=i+1){
             for(int j = i+1; j<dataIDKaryawan.size(); j=j+1){
-                temp1 = dataIDKaryawan.get(i).getName();
-                temp2 = dataIDKaryawan.get(j).getName();
-                if(temp1.compareToIgnoreCase(temp2)>0){
-                    IdentitasKaryawan temp =  dataIDKaryawan.get(i);
+                tmp1 = dataIDKaryawan.get(i).getName();
+                tmp2 = dataIDKaryawan.get(j).getName();
+                if(tmp1.compareToIgnoreCase(tmp2)>0){
+                    IdentitasKaryawan tmp =  dataIDKaryawan.get(i);
                     dataIDKaryawan.set(i, dataIDKaryawan.get(j));
-                    dataIDKaryawan.set(j, temp);
+                    dataIDKaryawan.set(j, tmp);
                 }
             }
         }System.out.println(dataIDKaryawan);
@@ -146,15 +146,15 @@ public class Menus {
     
 	private static void TampilkandataRegistrasisorted() {
 		// TODO Auto-generated method stub
-		String temp3, temp4;
+		String tmp3, tmp4;
         for (int i = 0; i<dataRegistrasi.size(); i=i+1){
             for(int j = i+1; j<dataRegistrasi.size(); j=j+1){
-                temp3 = dataRegistrasi.get(i).getNamaKaryawan();
-                temp4 = dataRegistrasi.get(j).getNamaKaryawan();
-                if(temp3.compareToIgnoreCase(temp4)>0){
-                	Registrasi temp =  dataRegistrasi.get(i);
+                tmp3 = dataRegistrasi.get(i).getNamaKaryawan();
+                tmp4 = dataRegistrasi.get(j).getNamaKaryawan();
+                if(tmp3.compareToIgnoreCase(tmp4)>0){
+                	Registrasi tmp =  dataRegistrasi.get(i);
                     dataRegistrasi.set(i, dataRegistrasi.get(j));
-                    dataRegistrasi.set(j, temp);
+                    dataRegistrasi.set(j, tmp);
                 }
             }
         }System.out.println(dataRegistrasi);
