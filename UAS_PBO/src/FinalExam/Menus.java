@@ -128,6 +128,7 @@ public class Menus {
         }
     }
     
+    // no 7  bubble sort
     private static  void TampilkandataIDKaryawansorted() {
 		// TODO Auto-generated method stub	
         String tmp1, tmp2;
@@ -143,7 +144,7 @@ public class Menus {
             }
         }System.out.println(dataIDKaryawan);
     }    
-    
+    // no 7  bubble sort    
 	private static void TampilkandataRegistrasisorted() {
 		// TODO Auto-generated method stub
 		String tmp3, tmp4;
